@@ -77,3 +77,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         } catch (err) { alert("შეცდომა!"); }
     });
 });
+
+function toggleMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("open");
+    
+    console.log("მენიუს სტატუსი:", menu.classList.contains("open") ? "გახსნილია" : "დახურულია");
+}
