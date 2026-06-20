@@ -2,7 +2,7 @@ const AIRTABLE_PAT = "pataLE2syNqac6KUU.de3250ccd56d73105203a93d99b571c5d68f5c91
 const BASE_ID = "appWRZnpxUuPDTr1S";
 const TABLE_NAME = "Aestetic Centre";
 const TELEGRAM_TOKEN = "8632368725:AAGK-aFjSXLW5qd14u1f3IObgVuHZU3vwHg";
-const CHAT_ID = "6510438875";
+const CHAT_ID = "-5145887320";
 
 function updatePrice() {
     const procSelect = document.getElementById("procedureSelect");
