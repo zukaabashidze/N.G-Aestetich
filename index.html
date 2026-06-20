@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N.G Aesthetic – სილამაზის კლინიკა</title>
+  <meta name="description" content="N.G Aesthetic – პრემიუმ ესთეტიკის ცენტრი თბილისში. ლაზერული ეპილაცია, თმის მოვლა, ფრჩხილის სერვისი, სპა და კოსმეტოლოგია." />
+  <meta name="keywords" content="სილამაზის კლინიკა, ლაზერული ეპილაცია, სახის წმენდა, წარბების კორექცია, წამწამების ლამინირება, სოლარიუმი, სპა, ტატუ, თბილისი, NG Aesthetic" />
+  <meta property="og:title" content="N.G Aesthetic" />
+  <meta property="og:description" content="პრემიუმ სილამაზის კლინიკა – თქვენი სიმშვენიერე, ჩვენი ხელოვნება." />
+  <meta property="og:type" content="website" />
+  
+  <link rel="icon" type="image/png" href="logo.png?v=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+<nav>
+  <div class="nav-logo" id="editable-logo" data-key="site-logo">
+    <img src="logo.png" alt="Logo" class="site-logo-img">
+    N.G Aesthetic
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">მომსახურებები</a></li>
+    <li><a href="#gallery">გალერეა</a></li>
+    <li><a href="#contact">კონტაქტი</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">ჩაწერა</a>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+ 
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" onclick="toggleMenu()">მომსახურებები</a>
+  <a href="#gallery" onclick="toggleMenu()">გალერეა</a>
+  <a href="#contact" onclick="toggleMenu()">კონტაქტი</a>
+  <a class="btn-primary" href="#contact" onclick="toggleMenu()">ჩაწერა</a>
+</div>
+
+<main>
+<section id="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1920'); background-size: cover; background-position: center;">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-key="hero-eyebrow">პრემიუმ სილამაზის კლინიკა · თბილისი</p>
+    <h1 class="hero-title" data-key="hero-title">
+      თქვენი სიმშვენიერე –<br/><em class="editable-em">ჩვენი ხელოვნება</em>
+    </h1>
+    <p class="hero-sub" data-key="hero-sub">
+      სპეციალიზირებული პროცედურები, ინდივიდუალური მიდგომა და თანამედროვე ტექნოლოგიები – ყველაფერი ერთ ადგილას.
+    </p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">ჩაწერა უფასოდ</a>
+      <a class="btn-ghost" href="#services">მომსახურებები</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="services-header">
+    <p class="section-eyebrow">ჩვენი პროცედურები</p>
+    <h2 class="section-title" data-key="services-main-title">
+      ხელოვნება<br/><em class="editable-em">სიმშვენიერის</em> სახელით
+    </h2>
+    <div class="divider"></div>
+  </div>
+ 
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=600" alt="თმის შეჭრა კაცი/ქალი" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">01</div>
+      <h3 class="service-name" data-key="svc1-name">თმის შეჭრა კაცი/ქალი</h3>
+      <p class="service-desc" data-key="svc1-desc">
+        სტილისტების პროფესიონალური მომსახურება, თქვენს სახის ფორმასა და იმიჯზე მორგებული თმის მოდელირება.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc1-price">35 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="warbi.jpg" alt="წარბების კორექცია" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">02</div>
+      <h3 class="service-name" data-key="svc2-name">წარბების კორექცია</h3>
+      <p class="service-desc" data-key="svc2-desc">
+        წარბის ფორმის იდეალური არქიტექტურა, კორექცია ძაფით/პინცეტით და უმაღლესი ხარისხის საღებავებით შეფერილობა.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc2-price">20 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+ 
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="wamwami.jpg" alt="წამწამების ლამინირება" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">03</div>
+      <h3 class="service-name" data-key="svc3-name">წამწამების ლამინირება</h3>
+      <p class="service-desc" data-key="svc3-desc">
+        ბუნებრივი წამწამების აპლისი, კერატინით კვება, დაგრძელებისა და მუქი ტონის ეფექტი ხანგრძლივი შედეგით.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc3-price">60 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+ 
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="dagrdzeleba.jpg" alt="წამწამების დაგრძელება" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">04</div>
+      <h3 class="service-name" data-key="svc4-name">წამწამების დაგრძელება</h3>
+      <p class="service-desc" data-key="svc4-desc">
+        კლასიკური, 2D, 3D და ჰოლივუდის მოცულობები ჰიპოალერგიული მასალებით ექსპრესიული გამოხედვისთვის.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc4-price">70 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="saxisi_grma_cmennda.jpg" alt="სახის ღრმა წმენდა" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">05</div>
+      <h3 class="service-name" data-key="svc5-name">სახის ღრმა წმენდა</h3>
+      <p class="service-desc" data-key="svc5-desc">
+        კომბინირებული, აპარატურული და მანუალური წმენდა პრემიუმ ბრენდების კოსმეტიკით კანის სრული რეგენერაციისთვის.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc5-price">80 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="frchxili.jpg" alt="ფრჩხილის პროცედურები" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">06</div>
+      <h3 class="service-name" data-key="svc6-name">ფრჩხილის სერვისები</h3>
+      <p class="service-desc" data-key="svc6-desc">
+        მანიკური, პედიკური, შილაკი, ფრჩხილების დაგრძელება გელით და უახლესი ექსკლუზიური დიზაინები.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc6-price">30 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="lazeruli_epilacia.jpg" alt="ლაზერული ეპილაცია" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">07</div>
+      <h3 class="service-name" data-key="svc7-name">აპარატურული ეპილაცია</h3>
+      <p class="service-desc" data-key="svc7-desc">
+        უმტკივნეულო და უსწრაფესი ეპილაცია 4-სხივიანი (4-Wave) ლაზერით!
+მაქსიმალური შედეგი ყველა ტიპის კანისა და თმისთვის. იდეალური სირბილე სხეულის ნებისმიერ ზონაზე.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc7-price">15 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 220px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0; background-color: #fcfcfc; display: flex; align-items: center; justify-content: center;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyiXFH2zRWzz0kEkZxecSazHdCifkSbBvKWDrhWGxZrOROkDvNoBjW3sI&s=10" 
+            alt="სოლარიუმი" 
+            style="width: 90%; height: 90%; object-fit: contain;">
+      </div>
+      <div class="service-num">08</div>
+      <h3 class="service-name" data-key="svc8-name">სოლარიუმი</h3>
+      <p class="service-desc" data-key="svc8-desc">
+        უსაფრთხო, თანაბარი და შოკოლადისფერი რუჯი უძლიერესი ახალი ნათურებითა და დამცავი კრემების ფართო არჩევანით.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc8-price">2 ₾</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=600" alt="სპა პროცედურები" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">09</div>
+      <h3 class="service-name" data-key="svc9-name">სპა პროცედურები</h3>
+      <p class="service-desc" data-key="svc9-desc">
+        სარელაქსაციო და გამაჯანსაღებელი სეანსები, სკრაბინგი, არომათერაპია და სხეულის მოვლის რიტუალები.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc9-price">90 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-img-wrapper" style="height: 200px; overflow: hidden; margin: -24px -24px 20px -24px; border-radius: 4px 4px 0 0;">
+        <img src="tatu.jpg" alt="ტატუ და პერმანენტი" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="service-num">10</div>
+      <h3 class="service-name" data-key="svc10-name">ტატუ & პერმანენტი</h3>
+      <p class="service-desc" data-key="svc10-desc">
+        მხატვრული ტატუირება, ტუჩისა და თვალის კონტურის პერმანენტული მაკიაჟი სტერილიზაციის ნორმების სრული დაცვით.
+      </p>
+      <div class="service-price">
+        <span class="price-value" data-key="svc10-price">100 ₾</span>
+        <span>დან </span>
+      </div>
+    </div>
+ 
+    <div class="service-card promo-card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://plus.unsplash.com/premium_vector-1745409090575-0079f15e5ba1?w=352&dpr=1&h=367&auto=format&fit=crop&q=60&ixlib=rb-4.1.0'); background-size: cover; color: #fff;">
+      <div class="service-num promo-star">★</div>
+      <p class="promo-eyebrow" data-key="promo-eyebrow">კონსულტაცია</p>
+      <h3 class="promo-title" data-key="promo-title">გაქვთ კითხვები?<br/><em class="editable-em">ვუპასუხებთ!</em></h3>
+      <a class="btn-primary" href="#contact" style="font-size:12px; padding:13px 28px;">უფასო კონსულტაცია</a>
+    </div>
+ 
+  </div>
+</section>
+ 
+<section id="gallery">
+  <div class="gallery-header">
+    <p class="section-eyebrow" style="color: #2d6a4f;">ჩვენი შედეგები</p>
+    <h2 class="section-title">
+      Before & After –<br/><em class="editable-em">განსხვავება ჩანს</em>
+    </h2>
+    <div class="divider" style="background: #40916c; height: 3px; width: 60px; margin: 15px auto;"></div>
+  </div>
+
+  <div class="ba-section">
+    <style>
+.simple-ba-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.simple-ba-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(64,145,108,0.12);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+}
+
+.simple-ba-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.simple-ba-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.simple-ba-card:hover img {
+    transform: scale(1.05);
+}
+
+.simple-ba-caption {
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    background: linear-gradient(135deg, #d4a373, #d4a373);
+    letter-spacing: 0.4px;
+}
+
+.interior-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.interior-grid img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(64,145,108,0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.4s ease;
+}
+
+.interior-grid img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+</style>
+    <div class="simple-ba-grid">
+ 
+      <div class="simple-ba-card">
+        <img src="tma.jpg" alt="თმის შეჭრა">
+        <div class="simple-ba-caption">თმის შეჭრა</div>
+      </div>
+ 
+      <div class="simple-ba-card">
+        <img src="warbis.png" alt="წარბების კორექცია">
+        <div class="simple-ba-caption">წარბების არქიტექტურა და კორექცია</div>
+      </div>
+ 
+      <div class="simple-ba-card">
+        <img src="saxis.png" alt="სახის წმენდა">
+        <div class="simple-ba-caption">სახის ღრმა წმენდა</div>
+      </div>
+ 
+    </div>
+  </div>
+
+<div class="clinic-interior-gallery" style="max-width: 1200px; margin: 80px auto; padding: 0 20px;">
+  <p class="section-eyebrow" style="text-align: center; color: #2d6a4f; margin-bottom: 30px; font-size: 1.2rem; letter-spacing: 1px;">კლინიკის სივრცე</p>
+  
+  <div class="interior-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+    <div class="gallery-card" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+      <img src="sivrce(4).jpg" alt="კლინიკის სივრცე 1" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="gallery-card" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+      <img src="sivrce(2).jpg" alt="კლინიკის სივრცე 2" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+    </div>
+
+    <div class="gallery-card" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+      <img src="sivrce(3).jpg" alt="კლინიკის სივრცე 3" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+    </div>
+
+  </div>
+</div>
+ 
+<section id="contact">
+  <div class="contact-grid">
+ 
+    <div class="contact-info">
+      <p class="section-eyebrow">გვიპოვეთ</p>
+      <h2 class="section-title">კონტაქტი &<br/><em class="editable-em">ჩაწერა</em></h2>
+      <div class="divider"></div>
+ 
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <p class="contact-label">მისამართი</p>
+            <p class="contact-value" data-key="addr-text">თბილისი, შოთა რუსთაველის გამზ. 10</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <p class="contact-label">ტელეფონი</p>
+            <p class="contact-value" data-key="phone-text">+995 599 00 00 00</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <p class="contact-label">სამუშაო საათები</p>
+            <div class="hours-grid">
+              <div class="hour-row"><span class="day">ორშ – პარ</span><span data-key="hours-wk">10:00 – 20:00</span></div>
+              <div class="hour-row"><span class="day">შაბათი</span><span data-key="hours-sat">11:00 – 18:00</span></div>
+              <div class="hour-row"><span class="day">კვირა</span><span data-key="hours-sun">დასვენება</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe 
+          src="https://maps.google.com/maps?q=Tbilisi,%20Rustaveli%20Ave%2010&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+ 
+    <div class="contact-form-container">
+      <p class="form-title">ჩაწერა<br/><em style="font-family:'Cormorant Garamond',serif;font-style:italic;color:#e8d5b0;">კონსულტაციაზე</em></p>
+      <form id="appointmentForm">
+        <div class="form-group">
+          <label>სახელი</label>
+          <input type="text" id="clientName" placeholder="თქვენი სახელი" required />
+        </div>
+        <div class="form-group">
+          <label>ტელეფონი</label>
+          <input type="tel" id="clientPhone" placeholder="+995 5XX XX XX XX" required />
+        </div>
+        <div class="form-group">
+          <label>სასურველი პროცედურა</label>
+          <select id="procedureSelect" required onchange="updatePrice()">
+            <option value="" data-price="0">— აირჩიეთ —</option>
+            <option value="თმის შეჭრა კაცი/ქალი" data-key="svc1-price" data-price="0">თმის შეჭრა კაცი/ქალი</option>
+            <option value="წარბების კორექცია" data-key="svc2-price" data-price="0">წარბების კორექცია</option>
+            <option value="წამწამების ლამინირება" data-key="svc3-price" data-price="0">წამწამების ლამინირება</option>
+            <option value="წამწამების დაგრძელება" data-key="svc4-price" data-price="0">წამწამების დაგრძელება</option>
+            <option value="სახის ღრმა წმენდა" data-key="svc5-price" data-price="0">სახის ღრმა წმენდა</option>
+            <option value="ფრჩხილის სერვისები" data-key="svc6-price" data-price="0">ფრჩხილის სერვისები</option>
+            <option value="აპარატურული ეპილაცია" data-key="svc7-price" data-price="0">აპარატურული ეპილაცია</option>
+            <option value="სოლარიუმი" data-key="svc8-price" data-price="0">სოლარიუმი (წთ)</option>
+            <option value="სპა პროცედურები" data-key="svc9-price" data-price="0">სპა პროცედურები</option>
+            <option value="ტატუ & პერმანენტი" data-key="svc10-price" data-price="0">ტატუ & პერმანენტი</option>
+          </select>
+
+          <div class="form-group">
+            <label>სასურველი თარიღი და დრო</label>
+            <input type="datetime-local" id="appointmentDate" required style="width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #e8d5b0; background: transparent; color: #fff; border-radius: 4px;">
+          </div>
+        </div>
+        <div class="form-group" id="priceDisplayGroup" style="display: none; background: rgba(232, 213, 176, 0.1); padding: 12px; border-radius: 4px; border: 1px dashed #e8d5b0; margin-bottom: 20px;">
+          <span style="font-size: 14px; color: #aaa;">პროცედურის საწყისი ფასი: </span>
+          <strong id="procedurePrice" style="color: #e8d5b0; font-size: 18px; font-family: 'Cormorant Garamond', serif;">0 ₾</strong>
+        </div>
+
+        <div class="form-group">
+          <label>შეტყობინება (სურვილისამებრ)</label>
+          <textarea id="clientMessage" placeholder="დამატებითი კითხვა ან სასურველი თარიღი..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">გაგზავნა →</button>
+      </form>
+    </div>
+ 
+  </div>
+</section>
+</main>
+ 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<footer>
+  <div class="footer-inner">
+
+    <div class="footer-logo">
+      <img src="logo.png" alt="Logo" class="site-logo-img">
+      N.G Aesthetic
+    </div>
+
+    <p class="footer-copy" data-key="footer-copy">
+      © 2026 N.G Aesthetic · ყველა უფლება დაცულია · საიტი აწყობილია <a href="https://www.facebook.com/zuka.abashidze.107081" target="_blank" style="color: #e8d5b0; text-decoration: underline;">zuka abashidze-ს მიერ</a>
+    </p>
+
+    <div class="social-links">
+      <a class="social-link fa fa-facebook"
+         href="https://www.facebook.com/NGAestheticCenter/"
+         target="_blank"></a>
+
+      <a class="social-link fa fa-instagram"
+         href="https://www.instagram.com/ngaestheticcenter/"
+         target="_blank"></a>
+
+      <a class="social-link fa fa-youtube"
+         href="#"
+         target="_blank"></a>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
