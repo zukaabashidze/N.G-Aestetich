@@ -79,3 +79,16 @@ function toggleMenu() {
     
     console.log("მენიუს სტატუსი:", menu.classList.contains("open") ? "გახსნილია" : "დახურულია");
 }
+
+
+function changeSlide(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    const images = slider.querySelectorAll('img');
+    let activeIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+
+    images[activeIndex].classList.remove('active');
+
+    activeIndex = (activeIndex + direction + images.length) % images.length;
+
+    images[activeIndex].classList.add('active');
+}
